@@ -1,8 +1,9 @@
+import Homepage from "./Pages/HomePage"
 
-function App() {
+const App = () => {
   return (
-    <div className=' text-red-600'>
-      ahoj
+    <div>
+      <Homepage />
     </div>
   )
 }

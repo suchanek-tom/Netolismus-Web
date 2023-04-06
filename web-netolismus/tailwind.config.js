@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      'bg-image': "url('public/bg-image-1.webp')"
+    },
   },
   plugins: [],
 }
