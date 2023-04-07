@@ -1,4 +1,5 @@
 import ScrollToTop from "../components/ScrollToTop"
+import Footer from "../components/Footer"
 
 
 const Homepage = () => {
@@ -39,6 +40,9 @@ const Homepage = () => {
             <p className=" text-center text-2xl py-12 px-20">Netolismus, nebo také chorobná závislost na internetu a jeho službách patří mezi tzv. nelátkové závislosti. Znamená to, že u netolismu není člověk závislý na dodávce nějaké psychoaktivní látky do těla, jako je tomu u drogové závislosti, ale je závislý na určitém procesu, nebo způsobu chování, které nemůže ovládnout, např. potřeba být neustále online, nebo potřeba neustále kontrolovat mobilní telefon. K virtuálním drogám tedy patří sociální sítě, počítačové hry, různé internetové služby, ale i užívání samotných zařízení jako např. mobilní telefon, televize.</p>
 
             <p className=" text-center text-2xl py-12 px-20">Takovéto nutkavé chování se postupně stává pro daného jedince patologické, ovlivňuje vztahy s jeho rodinou a okolím, ovlivňuje jeho výkon v práci, nebo prospěch ve škole, negativně ovlivňuje i jeho zdraví a může vést k finančním problémům.</p>
+
+            {/* Footer */}
+            <Footer />
 
         </body>
     )

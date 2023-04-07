@@ -29,7 +29,7 @@ const ScrollToTop = () => {
         <div className=" relative">
             {" "}
             {showTopBtn && (
-                <FaAngleUp className=" fixed bottom-10 right-6 z-20 h-6 w-6 cursor-pointer" onClick={goToTop} />
+                <FaAngleUp className=" fixed bottom-10 right-6 z-20 h-10 w-10 cursor-pointer rounded-md bg-slate-500 hover:scale-125 duration-300" onClick={goToTop} />
             )}
             {" "}
         </div>
