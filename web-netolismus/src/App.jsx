@@ -6,7 +6,7 @@ import ErrorPage from "./Pages/ErrorPage"
 import PriznakyPage from "./Pages/PriznakyPage"
 import RizikaPage from "./Pages/RizikaPage"
 import LecbaPage from "./Pages/LecbaPage"
-// TODO: Přidat ostatní stránky
+
 
 const App = () => {
   return (

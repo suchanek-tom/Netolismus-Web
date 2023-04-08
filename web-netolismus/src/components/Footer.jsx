@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 
 const Footer = () =>{
     return(
@@ -8,16 +10,24 @@ const Footer = () =>{
                 </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium  sm:mt-0">
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                        <NavLink to="/"  className={({ isActive }) =>
+                            isActive ? "text-black" : "mx-2"
+                        }>Domů</NavLink>
                     </li>
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                        <NavLink to="/Priznaky"  className={({ isActive }) =>
+                            isActive ? "text-black " : "ml-4 mr-2"
+                        }>Příznaky</NavLink>
                     </li>
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+                        <NavLink to="/Rizika" className={({ isActive }) =>
+                            isActive ? "text-black" : "mx-2"
+                        }>Rizika</NavLink>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">Contact</a>
+                        <NavLink to="/lecba" className={({ isActive }) =>
+                            isActive ? "text-black" : "mx-2"
+                        }>Léčba</NavLink>
                     </li>
                 </ul>
             </div>
