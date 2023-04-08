@@ -25,7 +25,7 @@ const PriznakyPage = () =>{
                                 <h1 className="mb-4 text-8xl font-semibold uppercase">Příznaky</h1>
                                 <button
                                 type="button"
-                                className=" border-2 p-2 ml-2 rounded">
+                                className=" border-2 py-2 px-5 ml-2 rounded hover:text-black hover:bg-white duration-500 ease-in-out hover:font-semibold ">
                                 <a href="#info">Více zde</a>
                                 </button>
                             </div>
@@ -36,12 +36,12 @@ const PriznakyPage = () =>{
             {/* Body */}
 
                 {/* 1 */}
-            <section>
-                <div className="py-16 bg-white">  
+            <section id="info">
+                <div className="py-10 bg-white">  
                     <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                         <div className="md:5/12 lg:w-5/12">
-                            {/* img */}
+                            <img src="https://cdn.pixabay.com/photo/2017/10/10/21/49/blogger-2838945_960_720.jpg" alt="Vyznacnost" />
                         </div>
                         <div className="md:7/12 lg:w-6/12">
                             <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">1. Význačnost</h2>
@@ -54,7 +54,7 @@ const PriznakyPage = () =>{
             </section>
 
                 {/* 2 */}
-                    <section className="my-10">
+                    <section className="my-5">
                         <div className="py-16 bg-white">  
                             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -64,7 +64,7 @@ const PriznakyPage = () =>{
                                     
                                     </div>
                                     <div className="md:5/12 lg:w-5/12">
-                                        {/* img */}
+                                        <img src="https://cdn.pixabay.com/photo/2017/11/02/20/24/depression-2912404_960_720.jpg" alt="Zmeny_nalad" />
                                     </div>
                                 </div>
                             </div>
@@ -73,11 +73,11 @@ const PriznakyPage = () =>{
 
                 {/* 3 */}
                     <section>
-                        <div className="py-16 bg-white">  
+                        <div className="py-10 bg-white">  
                             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                                 <div className="md:5/12 lg:w-5/12">
-                                    {/* img */}
+                                    <img src="https://cdn.pixabay.com/photo/2018/04/11/10/55/child-3310208_960_720.jpg" alt="Tolerance" />
                                 </div>
                                 <div className="md:7/12 lg:w-6/12">
                                     <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">3. Tolerance</h2>
@@ -89,7 +89,7 @@ const PriznakyPage = () =>{
                     </section>
 
                 {/* 4 */}
-                    <section className="my-10">
+                    <section className="my-5">
                             <div className="py-16 bg-white">  
                                 <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                                     <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -99,7 +99,7 @@ const PriznakyPage = () =>{
                                         
                                         </div>
                                         <div className="md:5/12 lg:w-5/12">
-                                            {/* img */}
+                                            <img src="https://cdn.pixabay.com/photo/2015/01/24/12/27/censorship-610101_960_720.jpg" alt="Abstinence" />
                                         </div>
                                     </div>
                                 </div>
@@ -108,11 +108,11 @@ const PriznakyPage = () =>{
 
                 {/* 5 */}
                     <section>
-                            <div className="py-16 bg-white">  
+                            <div className="py-12 bg-white">  
                                 <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                                     <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                                     <div className="md:5/12 lg:w-5/12">
-                                        {/* img */}
+                                        <img src="https://cdn.pixabay.com/photo/2017/01/27/18/50/male-2013929_960_720.jpg" alt="Relaps" />
                                     </div>
                                     <div className="md:7/12 lg:w-6/12">
                                         <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">5. Relaps (znovuvzplanutí)</h2>
@@ -134,7 +134,7 @@ const PriznakyPage = () =>{
                                         
                                         </div>
                                         <div className="md:5/12 lg:w-5/12">
-                                            {/* img */}
+                                            <img src="https://cdn.pixabay.com/photo/2014/01/04/13/58/argument-238529_960_720.jpg" alt="Conflict" />
                                         </div>
                                     </div>
                                 </div>
