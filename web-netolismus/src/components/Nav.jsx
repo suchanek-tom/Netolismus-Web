@@ -10,7 +10,9 @@ const Nav = () =>{
 
         <nav className="flex items-center justify-between flex-wrap p-6">
             <div className="flex items-center text-3xl flex-shrink-0 text-white mr-6 lg:mr-72">
-                Netolismus
+                        <NavLink to="/"  className={({ isActive }) =>
+                            isActive ? "" : ""
+                        }>Netolismus</NavLink>
             </div>
 
             {/* Hamburger */}

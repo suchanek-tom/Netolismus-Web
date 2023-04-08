@@ -21,7 +21,7 @@ const PriznakyPage = () =>{
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}> 
                         <Nav />
                         <div className="flex h-full items-center justify-center">
-                            <div className="text-white">
+                            <div className="text-white -mt-28">
                                 <h1 className="mb-4 text-8xl font-semibold uppercase">Příznaky</h1>
                                 <button
                                 type="button"

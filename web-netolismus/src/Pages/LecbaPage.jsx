@@ -21,11 +21,11 @@ const LecbaPage = () =>{
                         style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}> 
                             <Nav />
                             <div className="flex h-full items-center justify-center">
-                                <div className="text-white">
+                                <div className="text-white -mt-28">
                                     <h1 className="mb-4 text-8xl font-semibold uppercase">Léčba</h1>
                                     <button
                                     type="button"
-                                    className=" border-2 p-2 ml-2 rounded">
+                                    className="border-2 py-2 px-5 ml-2 rounded hover:text-black hover:bg-white duration-500 ease-in-out hover:font-semibold ">
                                     <a href="#info">Více zde</a>
                                     </button>
                                 </div>
