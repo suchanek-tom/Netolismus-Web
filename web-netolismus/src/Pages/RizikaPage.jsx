@@ -85,6 +85,8 @@ const RizikaPage = () =>{
                     </div>
                 </div>
 
+                <p className=" text-center text-xl my-12 px-16 md:px-36">Se vzrůstajícím časem, který hře lidé věnují, omezují veškeré ostatní aktivity, tedy zájmy, koníčky a sport. Ty postupně redukují, až je nakonec zcela opouštějí.</p>
+
             {/* Footer */}
             <Footer />
 
