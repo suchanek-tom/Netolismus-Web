@@ -2,9 +2,13 @@ import ScrollToTop from "../components/ScrollToTop"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 
+import { motion as m } from "framer-motion"
+
 const PriznakyPage = () =>{
     return(
-        <>
+        <m.body initial={{ opacity: 0.75 }} 
+                animate={{ opacity: 1 }} 
+                transition={{ duration: 0.25, ease: "easeInOut" }}>
 
             <ScrollToTop />
 
@@ -144,7 +148,7 @@ const PriznakyPage = () =>{
             {/* Footer */}
             <Footer />
             
-        </>
+        </m.body>
     )
 }
 

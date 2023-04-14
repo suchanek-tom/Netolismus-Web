@@ -3,10 +3,13 @@ import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/Footer";
 
 import { NavLink } from "react-router-dom";
+import { motion as m } from "framer-motion"
 
 const RizikaPage = () =>{
     return(
-        <body>
+        <m.body initial={{ opacity: 0.75 }} 
+                animate={{ opacity: 1 }} 
+                transition={{ duration: 0.25, ease: "easeInOut" }}>
 
             <ScrollToTop />
 
@@ -40,7 +43,20 @@ const RizikaPage = () =>{
             <div className="flex justify-center my-14" id="info">
 
                 <div className=" flex-row">
-                    <h2 className=" font-bold m-2 text-2xl">Fyzická Rizika</h2>
+
+                <m.h2
+                    animate={{ x: [50, 150], opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 3,
+                        delay: 0.5,
+                        ease: [0.5, 0.71, 1, 1.5],
+                    }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileHover={{ scale: 1.2 }}
+                    >
+                    Fyzická Rizika
+                </m.h2>
+            
 
                     <ul className=" list-disc mx-2">
                         <li>Sedavý způsob života</li>
@@ -90,7 +106,7 @@ const RizikaPage = () =>{
             {/* Footer */}
             <Footer />
 
-        </body>
+        </m.body>
     )
 }
 

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { motion } from "framer-motion"
+import { motion as m } from "framer-motion"
+
 
 // Pages
 import Homepage from "./Pages/HomePage"
@@ -11,7 +12,7 @@ import LecbaPage from "./Pages/LecbaPage"
 
 const App = () => {
   return (
-        <BrowserRouter>
+      <BrowserRouter>
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/Priznaky" element={<PriznakyPage />} />

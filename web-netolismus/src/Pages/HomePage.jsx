@@ -2,9 +2,13 @@ import ScrollToTop from "../components/ScrollToTop"
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 
+import { motion as m } from "framer-motion"
+
 const Homepage = () => {
     return(
-        <body>
+        <m.body initial={{ opacity: 0.75 }} 
+                animate={{ opacity: 1 }} 
+                transition={{ duration: 0.25, ease: "easeInOut" }}> 
             <ScrollToTop />
 
             {/* Background Image */}
@@ -53,11 +57,10 @@ const Homepage = () => {
                             </div>  
                     </section>
 
-
             {/* Footer */}
             <Footer />
 
-        </body>
+        </m.body>
     )
 }
 
