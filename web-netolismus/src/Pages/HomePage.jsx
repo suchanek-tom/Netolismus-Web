@@ -40,6 +40,18 @@ const Homepage = () => {
 
             <p id="info" className=" text-center text-2xl my-8 px-4 md:px-12">Bez internetu se dnes už prakticky nikdo neobejde. Využíváme ho k práci, ke studiu, ke komunikaci s přáteli, k nakupování, k zábavě, k zahnání nudy, zkrátka ke všemu. Internet velmi rychle, spolehlivě a prakticky bez námahy uspokojuje řadu našich lidských potřeb, a proto se také stal tak důležitou součástí našich každodenních životů. Do některých životů se bohužel začlenil tak výrazně, že nemožnost jeho používání vyvolává u člověka abstinenční příznaky. V takovém případě hovoříme o netolismu.</p>
 
+            {/* VIDEO */}
+
+            <iframe width="720" height="480" 
+                    src="https://www.youtube.com/embed/4UBwrHIqyVM" 
+                    title="Zavislost na Internetu" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    className=" block mx-auto m-5 border border-black"
+                    >    
+            </iframe>
+
             <p className=" text-center text-2xl my-8 px-2 md:px-10">Netolismus, nebo také chorobná závislost na internetu a jeho službách patří mezi tzv. nelátkové závislosti. Znamená to, že u netolismu není člověk závislý na dodávce nějaké psychoaktivní látky do těla, jako je tomu u drogové závislosti, ale je závislý na určitém procesu, nebo způsobu chování, které nemůže ovládnout, např. potřeba být neustále online, nebo potřeba neustále kontrolovat mobilní telefon. K virtuálním drogám tedy patří sociální sítě, počítačové hry, různé internetové služby, ale i užívání samotných zařízení jako např. mobilní telefon, televize.</p>
 
                     <section>
