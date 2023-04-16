@@ -11,8 +11,8 @@ const ErrorPage = () =>{
                                Vypadá to, že jste našel bránu, která nikam nevede
                             </h1>
                             <p className="my-2 text-gray-800">Omlouváme se vám! <br />Navštivte prosím naši domovskou stránku, abyste se dostali tam, kam potřebujete.</p>
-                            <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
-                            <NavLink to="/" className="">
+                            <button className="sm:w-full lg:w-auto my-2 border rounded md py-2 px-4 text-center bg-black text-white hover:opacity-50 focus:outline-none duration-500">
+                            <NavLink to="/" className=" text-2xl font-semibold">
                                 Domů
                             </NavLink>
                             </button>
@@ -24,7 +24,7 @@ const ErrorPage = () =>{
                 </div>
             </div>
             <div>
-                <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
+                <img src="https://cdn.pixabay.com/photo/2016/06/15/18/49/plug-1459663_960_720.png" />
             </div>
         </div>
     )

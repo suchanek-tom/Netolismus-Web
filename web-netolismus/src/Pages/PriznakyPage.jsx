@@ -8,7 +8,7 @@ const PriznakyPage = () =>{
     return(
         <m.body initial={{ opacity: 0.75 }} 
                 animate={{ opacity: 1 }} 
-                transition={{ duration: 0.25, ease: "easeInOut" }}>
+                transition={{ duration: 0.45, ease: "easeInOut" }}>
 
             <ScrollToTop />
 

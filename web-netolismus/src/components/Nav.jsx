@@ -41,24 +41,24 @@ const Nav = () =>{
             <div className={`w-full block flex-grow lg:flex lg:items-center text-white lg:w-auto ${isOpen ? "block" : "hidden"}`}>
                 <div className="text-sm lg:flex lg:flex-grow justify-end text-center">
 
-                    <div className="lg:mx-3 hover:text-yellow-500 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
+                    <div className="lg:mx-3 hover:text-slate-300 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
                         <NavLink to="/"  className={({ isActive }) =>
-                            isActive ? "text-yellow-500" : ""
+                            isActive ? "text-white font-bold" : ""
                         }>Domů</NavLink>
                     </div>
-                    <div className="lg:mx-3 hover:text-yellow-500 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
+                    <div className="lg:mx-3 hover:text-slate-300 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
                         <NavLink to="/Priznaky"  className={({ isActive }) =>
-                            isActive ? "text-yellow-500" : ""
+                            isActive ? "text-white font-bold" : ""
                         }>Příznaky</NavLink>
                     </div>
-                    <div className="lg:mx-3 hover:text-yellow-500 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
+                    <div className="lg:mx-3 hover:text-slate-300 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
                         <NavLink to="/Rizika" className={({ isActive }) =>
-                            isActive ? "text-yellow-500" : ""
+                            isActive ? "text-white font-bold" : ""
                         }>Rizika</NavLink>
                     </div>
-                    <div className="lg:mx-3 hover:text-yellow-500 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
+                    <div className="lg:mx-3 hover:text-slate-300 text-3xl duration-500 active:text-yellow-500 py-2 md:py-0">
                         <NavLink to="/lecba" className={({ isActive }) =>
-                            isActive ? "text-yellow-500" : ""
+                            isActive ? "text-white font-bold" : ""
                         }>Léčba</NavLink>
                     </div>
                 </div>

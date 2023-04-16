@@ -2,13 +2,15 @@ import ScrollToTop from "../components/ScrollToTop"
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 
+import Image from "../images/social-media.png"
+
 import { motion as m } from "framer-motion"
 
 const Homepage = () => {
     return(
         <m.body initial={{ opacity: 0.75 }} 
                 animate={{ opacity: 1 }} 
-                transition={{ duration: 0.25, ease: "easeInOut" }}> 
+                transition={{ duration: 0.45, ease: "easeInOut" }}> 
             <ScrollToTop />
 
             {/* Background Image */}
@@ -25,7 +27,7 @@ const Homepage = () => {
                         <Nav />
                         <div className="flex h-full items-center justify-center">
                             <div className="text-white -mt-28">
-                                <h1 className="mb-4 text-8xl font-semibold uppercase">Netolismus</h1>
+                                <h1 className="mb-4 text-6xl md:text-8xl font-semibold uppercase">Netolismus</h1>
                                 <button
                                 type="button"
                                 className=" border-2 py-2 px-5 ml-2 rounded hover:text-black hover:bg-white duration-500 ease-in-out hover:font-semibold">
@@ -38,7 +40,11 @@ const Homepage = () => {
             
             {/* BASIC INFO */}
 
-            <p id="info" className=" text-center text-2xl my-8 px-4 md:px-12">Bez internetu se dnes už prakticky nikdo neobejde. Využíváme ho k práci, ke studiu, ke komunikaci s přáteli, k nakupování, k zábavě, k zahnání nudy, zkrátka ke všemu. Internet velmi rychle, spolehlivě a prakticky bez námahy uspokojuje řadu našich lidských potřeb, a proto se také stal tak důležitou součástí našich každodenních životů. Do některých životů se bohužel začlenil tak výrazně, že nemožnost jeho používání vyvolává u člověka abstinenční příznaky. V takovém případě hovoříme o netolismu.</p>
+            {/* IMG */}
+            
+            <img src={Image} alt="Image-phone" className=" h-24 block mx-auto mt-10" id="info" />
+
+            <p className=" text-center text-2xl my-8 px-4 md:px-12">Bez internetu se dnes už prakticky nikdo neobejde. Využíváme ho k práci, ke studiu, ke komunikaci s přáteli, k nakupování, k zábavě, k zahnání nudy, zkrátka ke všemu. Internet velmi rychle, spolehlivě a prakticky bez námahy uspokojuje řadu našich lidských potřeb, a proto se také stal tak důležitou součástí našich každodenních životů. Do některých životů se bohužel začlenil tak výrazně, že nemožnost jeho používání vyvolává u člověka abstinenční příznaky. V takovém případě hovoříme o netolismu.</p>
 
             {/* VIDEO */}
 
@@ -48,13 +54,13 @@ const Homepage = () => {
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen
-                    className=" block mx-auto m-5 border border-black"
+                    className=" block mx-auto m-5 border border-black w-full md:w-3/4"
                     >    
             </iframe>
 
             <p className=" text-center text-2xl my-8 px-2 md:px-10">Netolismus, nebo také chorobná závislost na internetu a jeho službách patří mezi tzv. nelátkové závislosti. Znamená to, že u netolismu není člověk závislý na dodávce nějaké psychoaktivní látky do těla, jako je tomu u drogové závislosti, ale je závislý na určitém procesu, nebo způsobu chování, které nemůže ovládnout, např. potřeba být neustále online, nebo potřeba neustále kontrolovat mobilní telefon. K virtuálním drogám tedy patří sociální sítě, počítačové hry, různé internetové služby, ale i užívání samotných zařízení jako např. mobilní telefon, televize.</p>
 
-                    <section>
+                    {/* <section>
                             <div className="py-6 bg-white">  
                                 <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                                     <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -67,7 +73,9 @@ const Homepage = () => {
                                     </div>
                                 </div>
                             </div>  
-                    </section>
+                    </section> */}
+
+                    <img src={Image} alt="Image-phone" className=" h-24 block mx-auto my-10" />
 
             {/* Footer */}
             <Footer />

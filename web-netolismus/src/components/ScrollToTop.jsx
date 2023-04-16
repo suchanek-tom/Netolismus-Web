@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 
 import { FaAngleUp } from 'react-icons/fa'
 
+import { motion as m } from "framer-motion"
+
 const ScrollToTop = () => {
 
     const [showTopBtn, setShowTopBtn] = useState(false);
@@ -26,10 +28,13 @@ const ScrollToTop = () => {
     }
 
     return(
+
         <div className=" relative">
             {" "}
             {showTopBtn && (
-                <FaAngleUp className=" fixed bottom-10 right-6 z-20 h-10 w-10 cursor-pointer rounded-md bg-slate-500 hover:scale-125 duration-300" onClick={goToTop} />
+                <FaAngleUp className=" fixed bottom-10 right-6 z-20 h-12 w-12 fill-white cursor-pointer rounded-full bg-black hover:scale-125 duration-300"     
+                            onClick={goToTop} 
+                />       
             )}
             {" "}
         </div>

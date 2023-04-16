@@ -5,11 +5,13 @@ import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
 import { motion as m } from "framer-motion"
 
+import Image from "../images/social-media.png"
+
 const RizikaPage = () =>{
     return(
         <m.body initial={{ opacity: 0.75 }} 
                 animate={{ opacity: 1 }} 
-                transition={{ duration: 0.25, ease: "easeInOut" }}>
+                transition={{ duration: 0.45, ease: "easeInOut" }}>
 
             <ScrollToTop />
 
@@ -40,38 +42,28 @@ const RizikaPage = () =>{
 
             {/* Body */}
 
-            <div className="flex justify-center my-14" id="info">
+            {/* IMG */}
+            <img src={Image} alt="Image-phone" className=" h-24 block mx-auto mt-10" id="info" />
 
-                <div className=" flex-row">
+            <div className="text-center md:text-left md:flex md:justify-center my-14" id="info">
 
-                <m.h2
-                    animate={{ x: [50, 150], opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 3,
-                        delay: 0.5,
-                        ease: [0.5, 0.71, 1, 1.5],
-                    }}
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    whileHover={{ scale: 1.2 }}
-                    >
-                    Fyzická Rizika
-                </m.h2>
-            
-
-                    <ul className=" list-disc mx-2">
+                <div className="  md:w-1/2">
+                    <h2 className="font-bold text-3xl py-2">Fyzická Rizika</h2>
+                    <ul className=" list-disc mx-2 text-lg">
                         <li>Sedavý způsob života</li>
                         <li>Obezita</li>
                         <li>Cukrovka</li>
-                        <li>Bolestí šíje, ramen, bederní páteře, drobných kloubů, zápěstí atd.</li>
+                        <li>Bolestí šíje</li>
+                        <li>Bolest ramen</li>
+                        <li>Bolest zad</li>
                         <li>Epilepsie</li>
                         <li>Dlouhodobý stres</li>
                     </ul>
                 </div>
 
-                <div className=" flex-row">
-                        <h2 className=" font-bold m-2 text-2xl">Psychologická a sociální rizika</h2>
-
-                        <ul className=" list-disc mx-2">
+                <div className=" ">
+                        <h2 className="font-bold m-2 text-3xl py-2">Psychologická a sociální rizika</h2>
+                        <ul className=" list-disc mx-2 text-lg">
                             <li>Špatná organizace času</li>
                             <li>Nepravidelnost v jídle</li>
                             <li>Nedostatek spánku</li>
@@ -90,10 +82,10 @@ const RizikaPage = () =>{
                     style={{
                     backgroundImage: "url('https://cdn.pixabay.com/photo/2016/12/05/19/49/syringe-1884784_960_720.jpg')",
                     }}>
-                    <div class=" bg-black rounded-xl bg-opacity-40 p-4">
+                    <div class=" bg-black rounded-xl bg-opacity-70 p-4">
                         <h1 class="text-center text-white text-2xl font-bold uppercase lg:text-6xl">Jak tomu předejít?</h1>
                         
-                        <button class="my-4 mr-auto ml-auto block border-4 border-green-800 text-white p-2 font-bold uppercase hover:text-white duration-700 hover:bg-green-800 ">
+                        <button class="my-4 mr-auto ml-auto block border-4 border-white text-white p-2 font-bold uppercase hover:bg-white hover:text-black duration-700">
                             <NavLink to="/lecba" className={({ isActive }) =>
                                 isActive ? "text-black" : "mx-2"
                             }>Čtěte zde</NavLink>
@@ -102,6 +94,9 @@ const RizikaPage = () =>{
                 </div>
 
                 <p className=" text-center text-xl my-12 px-16 md:px-36">Se vzrůstajícím časem, který hře lidé věnují, omezují veškeré ostatní aktivity, tedy zájmy, koníčky a sport. Ty postupně redukují, až je nakonec zcela opouštějí.</p>
+
+                {/* IMG */}
+                <img src={Image} alt="Image-phone" className=" h-24 block mx-auto mt-10" id="info" />
 
             {/* Footer */}
             <Footer />

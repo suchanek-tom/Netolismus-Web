@@ -2,6 +2,8 @@ import ScrollToTop from "../components/ScrollToTop"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 
+import Image from "../images/social-media.png"
+
 import { motion as m } from "framer-motion"
 
 const LecbaPage = () =>{
@@ -9,7 +11,7 @@ const LecbaPage = () =>{
     return(
         <m.body initial={{ opacity: 0.75 }} 
                 animate={{ opacity: 1 }} 
-                transition={{ duration: 0.25, ease: "easeInOut" }}>
+                transition={{ duration: 0.45, ease: "easeInOut" }}>
 
             <ScrollToTop />
 
@@ -40,21 +42,37 @@ const LecbaPage = () =>{
 
                 {/* Body */}
 
-                    {/* jak tomu předcházet */}
-                    <h2 className=" text-4xl font-bold text-center my-5" id="info">Jak netolismu předcházet?</h2>
+                    {/* IMG */}
+                    <img src={Image} alt="Image-phone" className=" h-24 block mx-auto mt-10" id="info" />
 
-                    <ol className=" list-disc mx-5">
-                        <li>Sledujte, jaké hry děti hrají.</li>
-                        <li>Uvědomte si, že hry mají i kladné stránky: některé umožňují rozvíjet logiku, postřeh, schopnost orientace ve složité situaci apod.</li>
-                        <li>Hrajte hry spolu s dítětem a potom si o nich povídejte – pomáháte tak rozlišovat fikci od reality.</li>
-                        <li>Stanovte striktní limity, kdy dítě může hrát a kdy ne.</li>
-                        <li>Dávejte pozor, aby dítě nehrálo hry u kamarádů.</li>
-                        <li>Zjistěte, zda dítě hraním počítačových her neutíká od nějakých problémů.</li>
-                        <li>V průběhu hraní veďte dítě k tomu, aby si po určité době (např. po hodině) udělalo přestávku, během ní o hře mluvte.</li>
-                        <li>Podporujte dítě v jiných zájmech.</li>
-                        <li>Předcházejte tomu, aby se dítě nudilo.</li>
-                        <li>Posilujte zdravé sebevědomí dítěte.</li>
-                    </ol>
+
+                    {/* jak tomu předcházet */}
+
+                       <section>
+                            <div className="py-6 bg-white">  
+                                <div className="container m-auto px-6 text-black md:px-12 xl:px-6">
+                                    <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                                    <div className="md:5/12 lg:w-5/12">
+                                        <img src="https://cdn.pixabay.com/photo/2016/07/29/15/26/pokemon-1553971_960_720.jpg" alt="Relaps" />
+                                    </div>
+                                    <div className="md:7/12 lg:w-6/12">
+                                        <h2 className=" text-4xl font-bold my-5" id="info">Jak netolismu předcházet?</h2>
+                                        <ol className=" list-disc text-xl px-10">
+                                            <li>Sledujte, jaké hry děti hrají.</li>
+                                            <li>Hrajte hry spolu s dítětem a potom si o nich povídejte <br /> <i>(pomáháte tak rozlišovat fikci od reality)</i></li>
+                                            <li>Stanovte striktní limity, kdy dítě může hrát a kdy ne.</li>
+                                            <li>Dávejte pozor, aby dítě nehrálo hry u kamarádů.</li>
+                                            <li>Zjistěte, zda dítě hraním počítačových her neutíká od nějakých problémů.</li>
+                                            
+                                            <li>Podporujte dítě v jiných zájmech.</li>
+                                            <li>Předcházejte tomu, aby se dítě nudilo.</li>
+                                            <li>Posilujte zdravé sebevědomí dítěte.</li>
+                                        </ol>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                    </section>
 
                     {/* léčba */}
                     <h2 className=" text-4xl font-bold text-center my-5">Léčba</h2>
@@ -62,8 +80,10 @@ const LecbaPage = () =>{
                     <p className=" text-center text-xl my-2 px-2 md:px-10">Obecně se odborníci shodují, že hlavní léčebnou metodou pro závislost na internetu by měla být psychoterapie, doplněná farmakoterapií v případě závažnějších případů, zejména antidepresivy. Nicméně, pouze zlomek závislých vyhledává odbornou pomoc, pravděpodobně kvůli tomu, že mnoho z nich se dokáže samo nebo s pomocí svých blízkých omezit. Dalším vysvětlením může být tendence popírat závislost samotnými závislými a nedostatečná informovanost veřejnosti o této problematice a možnostech léčby.</p>
 
                     <p className=" text-center text-xl my-2 px-2 md:px-10">Vážné případy závislosti na internetu však přesto mohou být léčeny odborníky, jak ukazují zprávy o vzniku specializovaných zařízení v zahraničí. Většina odborníků se shoduje na tom, že není reálné si v rámci terapeutických intervencí klást za cíl být po zbytek života offline, protože internet je neodmyslitelnou součástí moderní společnosti. Místo toho se doporučuje kontrolované užívání internetu, s cílem přerušit používání problematických aplikací (jako jsou online hry, pornografické stránky či chatování) a pokračovat v užívání méně ohrožujících aplikací, které jsou potřebné pro běžné fungování (například emailová pošta nebo vyhledávání informací).</p>
-                    
 
+                    {/* IMG */}
+                    <img src={Image} alt="Image-phone" className=" h-24 block mx-auto mt-10" id="info" />
+                    
                 {/* Footer */}
                 <Footer />
         </m.body>
