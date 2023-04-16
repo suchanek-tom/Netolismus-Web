@@ -2,7 +2,7 @@ import ScrollToTop from "../components/ScrollToTop"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 
-import Image from "../images/social-media.png"
+import Image from "../public/social-media.png"
 
 import { motion as m } from "framer-motion"
 

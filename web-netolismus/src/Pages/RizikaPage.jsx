@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
 import { motion as m } from "framer-motion"
 
-import Image from "../images/social-media.png"
+import Image from "../public/social-media.png"
 
 const RizikaPage = () =>{
     return(
