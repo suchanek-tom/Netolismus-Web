@@ -4,7 +4,7 @@ import { motion as m } from "framer-motion"
 
 // Pages
 import Homepage from "./Pages/HomePage"
-import ErrorPage from "./Pages/ErrorPage"
+import ErrorPage from "./Pages/404"
 import PriznakyPage from "./Pages/PriznakyPage"
 import RizikaPage from "./Pages/RizikaPage"
 import LecbaPage from "./Pages/LecbaPage"
